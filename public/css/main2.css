@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+#header{
+    border: thin solid black;
+    background-color:rgb(31, 30, 30); 
+    color:white;
+}
+@keyframes pics{
+    0%{
+        left:0%;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%  {
+        left:-200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75% {
+        left:-300%;
+
+    }
+    95%{
+        left:-300%;
+    }
+    100%{
+        left:-400%;
+    }
+}
+  #slider1 {
+      overflow: hidden;
+  } 
+  #slider1 figure img{
+      width: 20%;
+      float: left;
+  }
+  #slider1 figure{
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left:0;
+      text-align: left;
+      font-size:0;
+      animation:20s pics infinite ;
+  } 
+  #slider{
+    margin-left:10%; 
+    border-left: thin solid rgb(170, 167, 167); 
+    border-right: thin solid rgb(170, 167, 167);
+    margin-right: 10%;
+    box-shadow: 2px 0 10px black;
+    margin-top:5%; 
+}
+
+#adds > .inner:hover{
+    border: thin solid red;
+}
+.inner{
+    margin-left:70px;  
+    float: left;  
+    margin-top:30px;
+    border: thin solid black; 
+    box-shadow: 2px 0 10px black;
+}
+footer{
+text-align: center;
+border: thin solid black;
+    float: left;
+    background-color:rgb(31, 30, 30); 
+    padding: 10px;
+    width: 100%;
+    margin-top:15px;
+    color:white;
+    font-size: 20px;
+}
+.buttons {
+    width: 50%;
+    color:white;
+    background-color:rgb(31, 30, 30); 
+    border: none;
+    border-radius: 5px;
+    padding: 5px; 
+    margin-bottom:5px; 
+}
+.buttons :active{
+    background-color: rgb(65, 57, 57); 
+}
+.buttons1{
+    background-color: orange;
+    border: none;
+    align-items:  center;
+    margin-bottom: 5px;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 15px;
+
+}
+.buttons1:hover{
+    background-color: rgb(230, 187, 109);
+    text-decoration: underline;
+}
+.buttons1:active{
+    background-color: rgb(247, 237, 218);
+    color:orange;
+}
